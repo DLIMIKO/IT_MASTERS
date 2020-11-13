@@ -5,9 +5,10 @@
  * -> aritmetický priemer všetkých čísel (podľa vzorca súčet/počet, nie je ošetrený priemer zo záporých čísel)
  * -> minimum z čísel
  * –> maximum z čísel
- *
+ * 
  * @author IT MASTERS TEAM :)
  * @version 1.0
+ * @date 13. 11. 2020
  */
 
 
