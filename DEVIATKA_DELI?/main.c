@@ -92,7 +92,7 @@ int main()
  * Funkcia vygeneruje pseudonáhodné číslo v rozmedzí min až max.
  * @param min - minimálna hodnota čísla čo sa má vygenerovať
  * @param max - maximálna hodnota čísla čo sa má vygenerovať
- * @return
+ * @return - vygenerované pseudonáhodné číslo
  */
 int nahodne(int min, int max)
 {
