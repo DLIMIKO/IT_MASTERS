@@ -1,0 +1,34 @@
+% Práca s maticami: 
+
+% Definícia matice:
+A = [ 
+9 1 3 2 2 1
+1 0 -1 9 3 0
+-3 -2 1 5 0 2
+-2 1 2 0 5 1
+3 3 1 -4 0 -1
+0 2 3 3 2 0
+]; 
+
+% Vypočítaj determinant matice A:
+determinant_A = det(A);
+
+% Vyjadri mi presnú hodnotu
+det_A_presne = sym(determinant_A);
+
+% sym() nám vyjadrí symbolickú hodnotu -> zlomok, pi*3
+
+%Vypočítaj inverznú maticu A:
+inverzna_A = inv(A);
+
+% Vyjadri mi presnú hodnotu
+inv_A_presne = sym(inverzna_A);
+
+% Vytlač na display výsledok:
+disp(A); 
+disp(det_A_presne);
+disp(inv_A_presne);
+
+
+
+
