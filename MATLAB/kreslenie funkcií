@@ -1,0 +1,55 @@
+% Kreslenie funkcií v Matlabe
+
+% referenčná stránka: https://www.mathworks.com/help/matlab/ref/fplot.html
+
+% definícia funkcií
+
+funkcia1 = @(x) log(x); % ln(x)
+
+funkcia2 = @(x) log10(x); % log(x)
+
+funkcia3 = @(x) log(x) / log(7); % log_7(x)
+
+funkcia4 = @(x) exp(3*x); % e^3x
+
+funkcia5 = @(x) x^2;  
+
+funkcia6 = @(x) 1/x;
+
+
+% vytlačenie funkcií do grafu
+
+hold on; % možnosť písať viac funkcií do 1 súradnicovej sústavy
+
+fplot(funkcia1,[-5 5],'blue','Linewidth',3); 
+
+fplot(funkcia2,[-5 5],'red','Linewidth',3); 
+
+fplot(funkcia3,[-5 5],'green','Linewidth',3);
+
+fplot(funkcia4,[-5 5],'magenta','Linewidth',3);
+
+fplot(funkcia5,[-5 5],'cyan','Linewidth',3);
+
+fplot(funkcia6,[-5 5],'black','Linewidth',3);
+
+hold off;
+
+% upravovanie vzhľadu grafu
+
+grid on; % zobrazenie mriežky
+
+ylim([-5 5]); % ohraničenie osi y (nastavenie rozsahu)
+
+
+% názov grafu
+title('Grafy funkcií 1-6','Fontsize',20);
+
+% označenie osi x
+xlabel('x \rightarrow','Fontsize',20); 
+
+% označenie osi y
+ylabel('y \rightarrow','Fontsize',20);
+
+% popis funkcií
+legend({'y = ln(x)','y = log(x)','y = log_7(x)', 'y = e^{3x}', 'y = x^2','y = 1/x'},'Fontsize',20);
